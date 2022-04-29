@@ -1,0 +1,240 @@
+body {
+    font-family: 'Poppins', sans-serif , bold;
+    background: #BFB9B8 ; /*url(../imagens/fundo.png)*/ 
+    color: #2B2E2D;
+    font: 16px;
+    box-sizing: border-box;
+}
+
+#principal {
+    width: 900px;
+    margin: auto;
+    box-shadow:  0px 0px 5px #969696;
+    
+}
+
+
+h1 {
+    font-size: 22px;
+    color: #2B2E2D;
+    font-size: 1.2em;
+}
+
+
+/* Aqui é as primeiras configurações da Barra de Menu*/
+
+.menu {
+    background-color: #2B2E2D;
+    padding: 25px; /* Espaçamento da margem */
+    /* color: #5f5f54; */
+    text-align: center;
+    box-shadow:  0px 0px 5px #969696;
+}
+
+
+.menu p {
+    text-align: justify;
+}
+
+
+/* Transição Barra de Menu */
+
+.menu a {
+    text-decoration: none;
+    color: #BFB9B8;
+    padding: 10px; /* Espaçamento entre o menu de navegação */ 
+    text-transform: uppercase;  /* utilizada para manter o menu de navegação com as letras maíuscula */
+    font-size: 16px;
+    border-radius: 0px;
+    transition-property: all; /*  */
+    transition-duration: 2s;
+}
+
+.menu a:hover {
+    color: #2B2E2D;
+    font-size: 18px;
+    font: bold;
+    background-color: #BFB9B8;
+    border-radius: 10px;
+    border: 2px solid transparent ;
+    transition-property: all; 
+    transition-duration: 2s; /* Tempo de transição */
+    box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Container Página Home*/
+
+.container-box {
+    clear: both; /* Propriedade utilizada para limpar o efeito do float, faz com
+    que os elementos volte ao normal. (Como os elementos estão flutuando o pai não
+    vai saber a altura */
+    display: flex; /* Colocar os elementos na mesma linha (imagens)*/ 
+    justify-content: space-around; /* Espaçamento entre as imegens do home */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.img-campanha {
+    width: 30%; /* Espaço q cada imagem vai ocupar em uma linha  */
+}
+
+.imagem {
+    width: 270px; /* Tamanho imagens container-box (home) */
+    box-shadow:  0px 0px 5px #969696;
+}
+
+
+.conteudo-home {  /* Classe tem o objetivo de estilisar de maneiras diferente*/
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+
+/* Transição imagens home */
+
+
+
+/* Página Campanha Publicitária */
+
+.img-campanha {
+    /* border: 10px solid #828271; Bordas na imagens do conteudo */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;  */
+    width: 100%; 
+    box-shadow:  0px 0px 5px #969696;
+}
+
+
+
+/* Biografia - Contato */
+
+.conteudo {
+    background-color: #D9D9D9;
+    padding: 20px; /* Espaçamento da margem */
+    text-align: justify;
+}
+
+.video{
+    display: flex; /* Ajustar o video (centralizar) */
+    justify-content: center; /* centralizar video */
+    margin-bottom: 90px;
+}
+
+
+video {
+    width: 520px;
+    height: 440px;  
+}
+
+
+
+/* Formulário Página Contato */
+
+.formulario {
+    position: relative;
+    display: block;
+}
+
+.form-background {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px; 
+}
+
+.formulario input, .formulario textarea  {
+    width: 400px; /* Largura do furmulário */
+    display: block;
+    border: none; /* Sem borda */
+    padding: 10px; /* Espaçamento entre as linhas */
+    margin-bottom: 15px; 
+    border-bottom: 1px solid #888284; /* Borda Botão */
+    background-color: transparent; /* Botão transparente */
+    font-size: 14px;
+}
+
+
+/* Caixa de mensagem */
+
+
+.formulario textarea {
+    height: 180px; /* Altura da minha caixa de mensagem */
+}
+
+
+
+/* Atribuições do botão "Enviar Mensagem" */
+
+
+.formulario .submit {
+    cursor: pointer ;
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    border-radius: 0px;
+    color: #212121;
+    transition-property: all; 
+    transition-duration: 2s; 
+}
+
+.formulario .submit:hover {
+    background-color: #BFB9B8;
+    font-size: 16px;
+    font: bold;
+    color: #2B2E2D;
+    border-radius: 10px;
+    transition-property: all; 
+    transition-duration: 2s; 
+}
+
+
+
+/* Rodapé */
+
+
+.rodape {
+    position: relative; /* Posicionado em relação à sua posição normal*/
+    display: block;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 52px;
+    width: 900px;
+    background-color: #2B2E2D;
+    /* border-top: 1px solid #e9e9e9; */
+    box-shadow:  0px 0px 5px #969696;
+}
+
+#rodape-left, #rodape-right {
+    display: inline-block; /* Posicionar a lista de navegação em linha*/
+    margin-top: 8px;
+    margin-bottom: 0; /* Manter as margens dos 4 cantos na mesma proporção*/
+}
+
+#rodape-right {
+    position: absolute;
+    right: 0px; /*Margem 0 a esquerda, atribuição faz com que o menu fique posicionado no canto esquerdo */
+}
+
+.list-nav {
+    padding: 0 25px; /*  0px espaçamento utilizado para definir a distancia dos 4 cantos interno, 
+    20px difinir distancia nas laterais left,hight */
+}
+
+.list-nav li {
+    display: inline-block; /* Posicionar a lista de navegação em linha  */
+    padding: 5px 10px;
+}
+
+.list-nav li a {
+   color: #BFB9B8;
+   text-decoration: none;
+   font-size: 12px;
+   text-transform: uppercase;
+}
+
+.list-nav li a:hover {
+    color: #8a8a82;
+}
+
+
