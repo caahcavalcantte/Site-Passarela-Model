@@ -97,6 +97,14 @@ h1 {
 
 
 
+.container-box img:hover {
+   transition: 0.5s;
+   opacity: 0.6;
+   width: 250px;
+   border-radius: 10px;
+}
+
+
 /* Página Campanha Publicitária */
 
 .img-campanha {
